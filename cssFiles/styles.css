@@ -1,0 +1,387 @@
+/* Global Styles */
+body {
+    font-family: Lobster, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008cba;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 2px -2px gray;
+    margin: 0;
+    overflow: hidden;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #005f73;
+    border-radius: 5px;
+}
+
+.highlight {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+.search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #f8b400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background-color: #e69500;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 6vw;
+    color: #FFD700;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 80%;
+}
+
+
+/* Highlights */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    margin: 10px;
+    flex: 1 0 30%;
+}
+
+.card a {
+    position: relative;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Island Introduction */
+.island-intro {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.intro-content h2,
+.intro-content h3,
+.intro-content h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1800px;
+    margin: 0 0 20px 0;
+}
+
+/* Activities */
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px;
+}
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.activity-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.activity-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.activity-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.activity-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Bottom Images */
+.bottom-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #FFD700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: left;
+    width: 80%;
+}
+
+/* FAQs */
+.faqs {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.faq-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-indent: 30px;
+    margin-bottom: 15px;
+}
+
+.faq-content h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.faq-content p strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 5px 10px;
+}
+
+.footer-content .disclaimer p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+.disclaimer {
+    text-align: right;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+.disclaimer a {
+    color: #f8b400;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+/* Device Compatibility */
+@media (max-width: 768px) {
+
+    .nav-left,
+    .nav-right {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-button {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text {
+        font-size: 8vw;
+        top: 45%;
+        max-width: 90%;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .activity {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 70%;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-text {
+        font-size: 10vw;
+        top: 50%;
+    }
+}
